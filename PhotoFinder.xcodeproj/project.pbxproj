@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052FE5DB29B27E6200A7DE35 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 052FE5DA29B27E6200A7DE35 /* Alamofire */; };
+		05815DE229AFA2C10020F00A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 05815DE129AFA2C10020F00A /* SDWebImage */; };
 		05E532FD29ABF59500E2CE3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E532FC29ABF59500E2CE3F /* AppDelegate.swift */; };
 		05E532FF29ABF59500E2CE3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E532FE29ABF59500E2CE3F /* SceneDelegate.swift */; };
-		05E5330129ABF59500E2CE3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5330029ABF59500E2CE3F /* ViewController.swift */; };
+		05E5330129ABF59500E2CE3F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5330029ABF59500E2CE3F /* MainViewController.swift */; };
 		05E5330429ABF59500E2CE3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E5330229ABF59500E2CE3F /* Main.storyboard */; };
 		05E5330629ABF59700E2CE3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E5330529ABF59700E2CE3F /* Assets.xcassets */; };
 		05E5330929ABF59700E2CE3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E5330729ABF59700E2CE3F /* LaunchScreen.storyboard */; };
+		05E5331129ABFDD400E2CE3F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5331029ABFDD400E2CE3F /* PhotoCollectionViewCell.swift */; };
+		05E5331329ABFECC00E2CE3F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5331229ABFECC00E2CE3F /* NetworkManager.swift */; };
+		05E5331529AC02FD00E2CE3F /* PhotoResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5331429AC02FD00E2CE3F /* PhotoResults.swift */; };
+		05E5331A29AC103B00E2CE3F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5331929AC103B00E2CE3F /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05E532F929ABF59500E2CE3F /* PhotoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E532FC29ABF59500E2CE3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E532FE29ABF59500E2CE3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05E5330029ABF59500E2CE3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05E5330029ABF59500E2CE3F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		05E5330329ABF59500E2CE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05E5330529ABF59700E2CE3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05E5330829ABF59700E2CE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05E5330A29ABF59700E2CE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E5331029ABFDD400E2CE3F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		05E5331229ABFECC00E2CE3F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		05E5331429AC02FD00E2CE3F /* PhotoResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResults.swift; sourceTree = "<group>"; };
+		05E5331929AC103B00E2CE3F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05815DE229AFA2C10020F00A /* SDWebImage in Frameworks */,
+				052FE5DB29B27E6200A7DE35 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,10 +70,14 @@
 			children = (
 				05E532FC29ABF59500E2CE3F /* AppDelegate.swift */,
 				05E532FE29ABF59500E2CE3F /* SceneDelegate.swift */,
-				05E5330029ABF59500E2CE3F /* ViewController.swift */,
+				05E5330029ABF59500E2CE3F /* MainViewController.swift */,
+				05E5331029ABFDD400E2CE3F /* PhotoCollectionViewCell.swift */,
+				05E5331929AC103B00E2CE3F /* DetailsViewController.swift */,
+				05E5331229ABFECC00E2CE3F /* NetworkManager.swift */,
+				05E5331429AC02FD00E2CE3F /* PhotoResults.swift */,
 				05E5330229ABF59500E2CE3F /* Main.storyboard */,
-				05E5330529ABF59700E2CE3F /* Assets.xcassets */,
 				05E5330729ABF59700E2CE3F /* LaunchScreen.storyboard */,
+				05E5330529ABF59700E2CE3F /* Assets.xcassets */,
 				05E5330A29ABF59700E2CE3F /* Info.plist */,
 			);
 			path = PhotoFinder;
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = PhotoFinder;
+			packageProductDependencies = (
+				05815DE129AFA2C10020F00A /* SDWebImage */,
+				052FE5DA29B27E6200A7DE35 /* Alamofire */,
+			);
 			productName = PhotoFinder;
 			productReference = 05E532F929ABF59500E2CE3F /* PhotoFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 05E532F029ABF59500E2CE3F;
+			packageReferences = (
+				05815DE029AFA2C10020F00A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				052FE5D929B27E6200A7DE35 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 05E532FA29ABF59500E2CE3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05E5330129ABF59500E2CE3F /* ViewController.swift in Sources */,
+				05E5330129ABF59500E2CE3F /* MainViewController.swift in Sources */,
 				05E532FD29ABF59500E2CE3F /* AppDelegate.swift in Sources */,
+				05E5331529AC02FD00E2CE3F /* PhotoResults.swift in Sources */,
+				05E5331329ABFECC00E2CE3F /* NetworkManager.swift in Sources */,
+				05E5331A29AC103B00E2CE3F /* DetailsViewController.swift in Sources */,
+				05E5331129ABFDD400E2CE3F /* PhotoCollectionViewCell.swift in Sources */,
 				05E532FF29ABF59500E2CE3F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +386,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		052FE5D929B27E6200A7DE35 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		05815DE029AFA2C10020F00A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		052FE5DA29B27E6200A7DE35 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 052FE5D929B27E6200A7DE35 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		05815DE129AFA2C10020F00A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05815DE029AFA2C10020F00A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05E532F129ABF59500E2CE3F /* Project object */;
 }
